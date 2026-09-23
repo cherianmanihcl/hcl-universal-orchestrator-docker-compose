@@ -1,4 +1,4 @@
-# HCL Universal Orchestrator: Deployment using Docker or Podman
+# Deploying HCL Universal Orchestrator using Docker or Podman
 
 HCL Universal Orchestrator is a modern process orchestration solution designed for deployment via container platforms across public or private cloud environments. A container-based deployment using Docker or Podman ensures a fast and efficient way to launch your environment quickly. It simplifies maintenance, lowers deployment complexity, minimizes IT requirements, and you can quickly set up self-contained orchestration environments. 
 The uno-all-in-one-compose package provides the UnO core and optional services. It is designed for environments where you want to manage your prerequisite services independently. To respond to the growing request to make automation opportunities more accessible, HCL Universal Orchestrator containers can be deployed using the following 
@@ -251,6 +251,12 @@ docker compose --env-file main.env --profile full -f docker-compose.yml up -d
 ```
 podman compose --env-file main.env --profile full -f docker-compose.yml up -d
 ```
+
+8. Download and configure the HCL UnO agent. For more information, see [Installing HCL UnO agent](https://help.hcl-software.com/UnO/ContinuousDelivery/Configuring/t_configuring_orchestrationagent.html).
+
+**Note:** To download and configure Orchestration CLI, see [Installing and authenticating the Orchestration CLI](https://help.hcl-software.com/UnO/ContinuousDelivery/Deployment/installingocli.html).
+
+
 ### Optional: Deploying in an air-gapped environment
 
 To deploy the HCL Universal Orchestrator instance in an air-gapped environment, you can download the images into a portable archive and load them into a local container registry. After you log in to the HCL public registry, complete the following steps:
