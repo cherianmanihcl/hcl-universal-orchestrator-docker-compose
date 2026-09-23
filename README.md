@@ -64,29 +64,14 @@ Before you begin verify that your environment meets the following requirements. 
 
 	Then add these certificate files to the **security** folder.
 * Hardware requirements
-  	| Hardware resource | Base application | Additional: Agentic AI builder | Additional: AI pilot
+  	| Hardware resource | HCL Universal Orchestrator | Additional: Agentic AI builder | Additional: AI pilot
 	|--|--|--|--|
 	|RAM  | 16 GB  |4 GB | 6 GB |
 	|CPU  | 4 cores  |  2 cores  | 2 cores |
 	|Disk space | 50 GB | 18 GB | 2 GB |
+	
+	These values represent the minimum system requirements. You can tune the resource limits in Docker Compose based on your specific requirements.
 
-## Resources Required
-  
- The following resources correspond to the default values are required to manage a production environment. These numbers might vary depending on the environment.
- 
-| Component | Container resource limit | Container resource request |
-|--|--|--|
-|**uno-orchestrator microservice**  | CPU: 2, Memory: 1 GB  |CPU: 0.3, Memory: 0.5 GB|
-|**Each remaining microservice**  | CPU: 2, Memory: 1 GB  |CPU: 0.3, Memory: 0.5 GB  |
-|**AIPilot-core** | CPU : 1, Memory: 2.5GB | CPU 0.5, Memory: 2GB
-|**AIPilot-action**| CPU: 0.3, Memory: 0.3GB | CPU: 0.1, Memory: 0.2GB
-|**AIPilot-nlg**| CPU: 0.3, Memory: 0.5GB | CPU: 0.1, Memory: 0.3GB
-|**AIPilot-rag**| CPU: 0.8, Memory: 1Gi | CPU: 0.2 , Memory: 0.2Gi
-|**agentic-ams** | CPU : 1, Memory: 250 Mi | CPU 300m, Memory: 500Mi
-|**agentic-runner** | CPU : 1, Memory: 250 Mi | CPU 300m, Memory: 500Mi
-|**agentic-cm** | CPU : 1, Memory: 250 Mi | CPU 300m, Memory: 500Mi
-
-No disk space is required for the microservices, however, at least 100 GB are recommended for Kafka and 100 GB for MongoDB. Requirements vary depending on your workload.
 	
 
 ## Services overview
