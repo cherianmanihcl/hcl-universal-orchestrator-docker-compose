@@ -72,7 +72,7 @@ Before you begin verify that your environment meets the following requirements. 
 	|CPU  | 4 cores  |  2 cores  | 2 cores |
 	|Disk space | 50 GB | 18 GB | 2 GB |
 	
-	These values represent the minimum system requirements. You can tune the resource limits in Docker Compose based on your specific requirements.
+	These values represent the minimum system requirements. You can tune the resource limits in Docker compose based on your specific requirements.
 
 	
 
