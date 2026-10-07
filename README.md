@@ -14,7 +14,6 @@ This document includes the following topics:
 
  * [Package contents](#Package-contents)
  * [Prerequisites](#Prerequisites)
- * [Resources required](#Resources-required)
  * [Services overview](#Services-overview)
  * [Compose profiles](#Compose-profiles)
  * [Deployment](#Deployment)
