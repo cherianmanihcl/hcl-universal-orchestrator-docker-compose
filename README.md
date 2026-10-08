@@ -321,7 +321,7 @@ The following procedure steps explain how to install the instances on two new se
    ```
    'SASL_SSL://<Primary_Server_IP_OR_DNS>:9092,PLAINTEXT://<Primary_Server_IP_OR_DNS>:9094'
     ```
-3. Open the **generate-certs.sh** script and add the public URL as Subject alternative Name.
+3. Open the uuuuuuu **generate-certs.sh** script and add the public URL as Subject alternative Name.
 	```
     'SASL_SSL://<Primary_Server_IP_OR_DNS>:9092,PLAINTEXT://<Primary_Server_IP_OR_DNS>:9094'
 	```
