@@ -48,6 +48,9 @@ Before you begin verify that your environment meets the following requirements. 
 
 * Podman: Version 5 or later.
 * Docker: Installing Docker by using APT is recommended for deployment. If you use Docker installed by using snap, extract the Docker Compose zip files to a user system directory (for example, `/home/ or /home/<username>/`) to avoid permission issues caused by snap confinement.
+* Linux distributions
+	- Ubuntu 22.04+
+	- RHEL 8+
 * Messaging system : Apache Kafka v 3.9 or later OR Redpanda v 25.3 or later. For more information, see [Kafka documentation](https://kafka.apache.org/43/getting-started/) or [Redpanda](https://docs.redpanda.com/agentic-data-plane/home/).
 * Database : MongoDB v 8 or later OR Azure DocumentDB (formerly known as Azure Cosmos DB for MongoDB vCore) OR AWS DocumentDB v 5 
 	(Note: Support for the DocumentDB platform is strictly limited to Instance-based clusters only). For more information, see [MongoDB documentation](https://www.mongodb.com/docs/) or [Azure Cosmos DB documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/) or [AWS documentation](https://docs.aws.amazon.com/documentdb/).
@@ -65,13 +68,13 @@ Before you begin verify that your environment meets the following requirements. 
 	Then add these certificate files to the **security** folder.
 * Registry Certificates: Download the required SSL/TLS certificate from the container registry, and save it to the `cert` directory in your home directory before you run the installation.
 * Hardware requirements
-  	| Hardware resource | HCL Universal Orchestrator | Additional: Agentic AI builder | Additional: AI pilot
-	|--|--|--|--|
-	|RAM  | 16 GB  |4 GB | 6 GB |
-	|CPU  | 4 cores  |  2 cores  | 2 cores |
-	|Disk space | 50 GB | 18 GB | 2 GB |
-	
-	These values represent the minimum system requirements. You can tune the resource limits in Docker compose based on your specific requirements.
+| Hardware resource | HCL Universal Orchestrator | Additional: Agentic AI builder | Additional: AI pilot |
+| :---: | :---: | :---: | :---: |
+| RAM | 16 GB | 4 GB | 6 GB |
+| CPU | 4 cores | 2 cores | 2 cores |
+| Disk space | 50 GB | 18 GB | 2 GB |
+
+    These values represent the minimum system requirements. You can tune the resource limits in Docker compose based on your specific requirements.
 
 	
 
@@ -321,7 +324,7 @@ The following procedure steps explain how to install the instances on two new se
    ```
    'SASL_SSL://<Primary_Server_IP_OR_DNS>:9092,PLAINTEXT://<Primary_Server_IP_OR_DNS>:9094'
     ```
-3. Open the uuuuuuu **generate-certs.sh** script and add the public URL as Subject alternative Name.
+3. Open the **generate-certs.sh** script and add the public URL as Subject alternative Name.
 	```
     'SASL_SSL://<Primary_Server_IP_OR_DNS>:9092,PLAINTEXT://<Primary_Server_IP_OR_DNS>:9094'
 	```
