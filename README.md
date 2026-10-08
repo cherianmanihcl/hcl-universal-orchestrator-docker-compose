@@ -68,6 +68,7 @@ Before you begin verify that your environment meets the following requirements. 
 	Then add these certificate files to the **security** folder.
 * Registry Certificates: Download the required SSL/TLS certificate from the container registry, and save it to the `cert` directory in your home directory before you run the installation.
 * Hardware requirements
+
 | Hardware resource | HCL Universal Orchestrator | Additional: Agentic AI builder | Additional: AI pilot |
 | :---: | :---: | :---: | :---: |
 | RAM | 16 GB | 4 GB | 6 GB |
